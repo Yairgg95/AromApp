@@ -15,4 +15,4 @@ logInBtn.addEventListener("click",() => {
 
     localStorage.setItem("token",token);
     window.open("../views/catalogo.html", "_self");
-})
+});
