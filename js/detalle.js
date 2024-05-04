@@ -1,11 +1,8 @@
-import { fetchPerfumeByKey } from "./modules/perfumesApi";
-
 document.addEventListener("DOMContentLoaded", () => {
   const url = window.location.href;
   const params = new URLSearchParams(new URL(url).search);
   let perfumeKey = params.get("perfumekey");
 
-  /*
   const fetchPerfumeByKey = async (perfumeKey) => {
     try {
       let response = await fetch(
@@ -18,7 +15,6 @@ document.addEventListener("DOMContentLoaded", () => {
       throw error;
     }
   };
-  */
 
   const printPerfumeData = async (perfumeKey) => {
     try {
