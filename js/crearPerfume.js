@@ -23,7 +23,8 @@ savePerfumeBtn.addEventListener("click", async () => {
   });
 
   let savedPerfume = await createPerfume(perfumeObject);
-  console.log(savedPerfume);
+
+  window.open("../views/catalogo.html", "_self");
 });
 
 const createPerfume = async (perfumeObject) => {

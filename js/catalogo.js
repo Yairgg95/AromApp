@@ -103,4 +103,9 @@ const printAllPerfumes = async () => {
   }
 };
 
+let createBtn = document.getElementById("create-perfume-btn");
+createBtn.addEventListener("click", () => {
+  window.open("../views/crearPerfume.html", "_self");
+});
+
 printAllPerfumes();
