@@ -1,3 +1,5 @@
+import { fetchAllPerfumes } from "./modules/perfumesApi";
+
 const createPerfumeCard = (perfumeObject) => {
   const { name, casa, family, price, concentration, URL, key } = perfumeObject;
 
@@ -79,6 +81,7 @@ const printPerfumes = (perfumesArray, wrapperId) => {
   wrapper.appendChild(fragment);
 };
 
+/*
 const fetchAllPerfumes = async () => {
   try {
     const response = await fetch(
@@ -93,6 +96,7 @@ const fetchAllPerfumes = async () => {
     return [];
   }
 };
+*/
 
 const printAllPerfumes = async () => {
   try {

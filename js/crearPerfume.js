@@ -1,3 +1,5 @@
+import { createPerfume } from "./modules/perfumesApi";
+
 let savePerfumeBtn = document.getElementById("save-perfume-btn");
 
 savePerfumeBtn.addEventListener("click", async () => {
@@ -27,6 +29,7 @@ savePerfumeBtn.addEventListener("click", async () => {
   window.open("../views/catalogo.html", "_self");
 });
 
+/*
 const createPerfume = async (perfumeObject) => {
   let response = await fetch(
     "https://kodemiajs-f4a26-default-rtdb.firebaseio.com/perfumes/.json",
@@ -38,3 +41,4 @@ const createPerfume = async (perfumeObject) => {
   let data = await response.json();
   return data;
 };
+*/
