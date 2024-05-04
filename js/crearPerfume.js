@@ -1,7 +1,7 @@
 let savePerfumeBtn = document.getElementById("save-perfume-btn");
 
 savePerfumeBtn.addEventListener("click", async () => {
-  let fields = document.querySelectorAll("#create-peerfume-form input");
+  let fields = document.querySelectorAll("#create-perfume-form input");
 
   let perfumeObject = {};
 
@@ -12,10 +12,13 @@ savePerfumeBtn.addEventListener("click", async () => {
 
     switch (type) {
       case "text":
-        petObject[property] = value;
+        perfumeObject[property] = value;
         break;
       case "number":
-        petObject[property] = Number(value);
+        perfumeObject[property] = Number(value);
+        break;
+      default:
+        perfumeObject[property] = value;
     }
   });
 
