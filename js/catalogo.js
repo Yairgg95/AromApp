@@ -2,7 +2,7 @@ const createPerfumeCard = (perfumeObject) => {
   const { name, casa, family, price, concentration, URL, key } = perfumeObject;
 
   const container = document.createElement("div");
-  container.classList.add("col");
+  container.classList.add("col","bg-transparent", "mb-4");
 
   const aCard = document.createElement("a");
   aCard.href = `../views/detalle.html?perfumeKey=${key}`;
@@ -13,7 +13,8 @@ const createPerfumeCard = (perfumeObject) => {
     "perfume-card",
     "p-0",
     "overflow-hidden",
-    "h-100"
+    "h-100",
+    "m-1"
   );
 
   const row = document.createElement("div");
